@@ -1,0 +1,163 @@
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+@font-face {
+	font-family: manifesto;
+	src: url(MANIFESTO.ttf);
+}
+
+html, body {
+height:100%;
+color: #eee;
+text-align: center;
+}
+body {
+	font-size: 62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+section {
+	position: relative;
+	height: 100%;
+}
+.container {
+	position: relative;
+	padding-top: 8em;
+	
+}
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+
+#header {
+	background: linear-gradient(to bottom, rgba(92, 86, 84, 0.4) , rgba(92, 86, 84, 1)), url(../practice/img/home.jpeg) no-repeat center center;
+	background-size: cover; 
+	background-attachment: fixed;
+
+}
+#header .container {
+	padding-top: 25em;
+}
+h1 {
+	font: bold 7em manifesto, "Lato", sans-serif;
+	color: #fff;
+}
+
+h3 {
+	font:  3.5em Lato, sans-serif;
+	/*margin: 0.5em  auto 2em;*/
+	margin-bottom: 1em; 
+}
+
+p {
+	font: 2em/1.5 "Josefin Sans", sans-serif;
+}
+
+nav ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+
+}
+
+nav li {
+	display: inline-block;
+	/*margin: 0 auto;*/
+}
+
+nav a {
+	font: 1.8em Inconsolata;
+	color:   #29282a;
+	text-decoration: none;
+	border: 2px solid #29282a;
+	background-color: #617269;
+	padding: 0.5em 1em;
+	margin: 0.4em;
+	transition: all 0.5s;
+}
+nav a:hover {
+	background-color: #29282a;
+	border: 2px solid #6d3d2e;
+	color: #6d3d2e;
+}
+
+#portfolio {
+	background:#817571;
+}
+
+#portfolio .portfolio-item {
+	max-width: 300px;
+	float: left;
+	height: 300px;
+	margin: 0 0 3em 3em;
+
+}
+#portfolio img {
+	max-width: 100%;
+	height: 260px;
+	display: block;
+}
+
+.portfolio-list {
+	width: 80%;
+	margin: 0 auto;
+}
+#about {
+	background: linear-gradient(to bottom, rgba(255,255,255, 0.8) , rgba(163, 144, 138, 0.4)), url(../practice/img/about.jpeg) no-repeat center center;
+	background-size: cover;
+	border: 1px solid rgb(163,144,138);
+	padding-bottom: 8em;
+	background-attachment: fixed;
+}
+
+.bio {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#about  p {
+	text-align: left;
+	color: #292b2a;
+}
+#about h3 {
+	color: #292b2a;
+}
+
+.profile-photo {
+	display: inline-block;
+	max-width: 250px;
+	border-radius: 15%;
+	opacity: 0.8;
+	box-shadow: 10px 5px 5px #817571;
+	float: right;
+	margin: 0 0 1.5em 1.5em;
+}
+
+#contact {
+	background:#3d3b3a;
+}
