@@ -1,24 +1,4 @@
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-*/
+
 @font-face {
 	font-family: manifesto;
 	src: url(MANIFESTO.ttf);
@@ -42,8 +22,8 @@ section {
 }
 .container {
 	position: relative;
-	padding-top: 8em;
-	
+	padding-top: 10em;
+	margin: 0 auto;
 }
 
 .group:before, .group:after {
@@ -69,9 +49,9 @@ h1 {
 }
 
 h3 {
-	font:  3.5em Lato, sans-serif;
+	font:  4em Lato, sans-serif;
 	/*margin: 0.5em  auto 2em;*/
-	margin-bottom: 1em; 
+	margin-bottom: 1.5em;
 }
 
 p {
@@ -108,24 +88,27 @@ nav a:hover {
 
 #portfolio {
 	background:#817571;
+	height: auto;
 }
 
-#portfolio .portfolio-item {
-	max-width: 300px;
-	float: left;
-	height: 300px;
-	margin: 0 0 3em 3em;
-
+#portfolio .portfolio-list .portfolio-item {
+	width: 28%;
+	height: 250px;
+	margin: 1.5%;
+	display: inline-block;
+	background-color: black;
+	border: 1px solid black;
 }
 #portfolio img {
-	max-width: 100%;
-	height: 260px;
-	display: block;
+	width: 100%;
+	height: 250px;
 }
 
 .portfolio-list {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
+	padding: 0 2em 3em;
+
 }
 #about {
 	background: linear-gradient(to bottom, rgba(255,255,255, 0.8) , rgba(163, 144, 138, 0.4)), url(../practice/img/about.jpeg) no-repeat center center;
@@ -133,6 +116,8 @@ nav a:hover {
 	border: 1px solid rgb(163,144,138);
 	padding-bottom: 8em;
 	background-attachment: fixed;
+	height: auto;
+	padding-bottom: 15em;
 }
 
 .bio {
@@ -160,4 +145,85 @@ nav a:hover {
 
 #contact {
 	background:#3d3b3a;
+	padding-bottom: 5em;
+}
+
+h4 {
+	font: 3em Lato, sans-serif;
+}
+#contact ul {
+	margin: 1em auto;
+	list-style: none;
+}
+#contact ul li {
+	margin: 0 auto;
+	transition:  all 0.5s;
+	border-radius: 100%;
+	border: 5px solid #3d3b3a;
+	display: table;
+}
+#contact .btn-social {
+	display:inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius:100%;
+	border: 2px solid #6d3d2e;
+	background-color: #6d3d2e;
+	text-align:center;
+	font-size: 4em;
+	font-weight:900;
+	line-height:60px;
+	color: #ddd;
+	margin: 0.1em;
+}
+
+#contact a {
+	transition: all 0.5s;
+	color: #ddd;
+	text-decoration: none;
+	border-bottom: 2px solid #6d3d2e;
+}
+#contact a:hover {
+	background-color: #292b2a;
+	color: #617269;
+}
+#contact ul li:hover{
+	border: 5px solid #292b2a;
+}
+
+.social-media {
+	width: 35%;
+	float: left;
+	padding: 0 auto;
+	margin-right: 10%;
+}
+.connect-email {
+	width: 45%;
+	text-align: left;
+}
+
+#contact .container {
+	margin: 0 auto;
+	width: 80%;
+}
+.email p {
+	margin: 0 auto;
+	text-align: left;
+}
+footer {
+	position: absolute;
+	height: 50px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	text-align: center;
+	background-color: #6d3d2a;
+	color: #a3908a;
+	padding-top: 20px;
+}
+footer p {
+	font-size: 1.2em;
+}
+#contact .container {
+	padding-bottom: 5em;
 }
