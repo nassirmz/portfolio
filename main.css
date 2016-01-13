@@ -62,12 +62,10 @@ nav ul {
 	list-style: none;
 	width: 100%;
 	padding: 0;
-
 }
 
 nav li {
 	display: inline-block;
-	/*margin: 0 auto;*/
 }
 
 nav a {
@@ -89,10 +87,9 @@ nav a:hover {
 #portfolio {
 	background: linear-gradient(to bottom, rgba(163,144,138, 1) , rgba(163, 144, 138, 0.4)), url(../practice/img/portfolio.jpeg) no-repeat center center;
 	background-size: cover;
-	background-size: cover; 
 	height: auto;
 }
-/* rgba(109, 61,46, 0.5); */
+
  .portfolio-item {
 	width: 28%;
 	height: 250px;
@@ -102,18 +99,42 @@ nav a:hover {
 	border: 6px solid #6d3d2e;
 	box-shadow: 5px 5px 5px #817571;
 	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
 }
 #portfolio img {
 	width: 100%;
-	 height: 100%;
+	height: 100%;
+}	
+.portfolio-item div {
+	position: absolute;
+	height: 100%;
+	transition: all 0.5s;
 }
 
 .portfolio-list {
 	width: 90%;
 	margin: 0 auto;
-	padding: 0 2em 3em;
-
+	/*padding: 0 2em 3em; */
+	padding-bottom: 5em;
 }
+.portfolio-item p:hover {
+	background: #292b2a;
+	opacity: 0.95;
+	color: #bd8d7e;
+}
+.portfolio-item p {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	background: rgb(97,114,105);
+	transition: all 0.5s;
+	padding-top: 100px;
+	opacity: 0;
+	top: 0;
+	z-index: 1;
+}
+
 #about {
 	
 	border: 1px solid rgb(163,144,138);
@@ -148,7 +169,6 @@ nav a:hover {
 }
 
 #contact {
-	
 	padding-bottom: 5em;
 	background:rgba(109,61,46, 0.4);
 }
@@ -189,11 +209,11 @@ h4 {
 	border-bottom: 2px solid #6d3d2e;
 }
 #contact a:hover {
-	background-color: #617269;
-	color: #292b2a;
+	background-color: #292b2a; 
+	color:  #6d3d2e;
 }
 #contact ul li:hover{
-	border: 5px solid #617269;
+	border: 5px solid #6d3d2e;
 }
 
 .social-media {
@@ -227,67 +247,69 @@ footer p {
 }
 
 @media screen and (max-width: 650px) {
-h1 {
-	font-size: 3.5em;
-}
+	h1 {
+		font-size: 3.5em;
+	}
 
-h3 {
-	font-size: 2.5em;
-}
-p {
-	font-size: 1.5em;
-}
-nav ul {
-	position: fixed;
-	background:rgba(109,61,46, 0.8);
-	top: 0;
-	height: 5em;
-	padding-top: 2em;
-	z-index: 1;
-}
-nav a {
-	font-size: 1.4em;
-}
+	h3 {
+		font-size: 2.5em;
+	}
+	p {
+		font-size: 1.5em;
+	}
+	nav ul {
+		position: fixed;
+		background:rgba(109,61,46, 0.8);
+		top: 0;
+		height: 5em;
+		padding-top: 2em;
+		z-index: 2;
+	}
+	nav a {
+		font-size: 1.4em;
+	}
 
-.portfolio-item {
-	width: 80%;
-	margin-bottom: 1.5em;
-}
-.social-media {
-	width: 90%;
-	margin: 0 auto 2em;
-	float: none;
-}
-#header .container {
-	padding-top: 15em;
-}
-#contact .btn-social {
-	width: 30px;
-	height: 30px;
-	font-size: 2em;
-	font-weight:900;
-	line-height: 30px;
-	color: #ddd;
-	margin: 0.1em;
-}
-#contact ul li {
-	display: inline-block;
-}
-.contact-email {
-	width: 90%;
-	margin: 0 auto 5em;
-}
-#contact {
-	height: auto;
-}
-h4 {
- font-size: 2em;
-}
-.profile-photo {
-	float: none;
-	margin: 0 auto 1.5em;
-}
-.bio {
-	width: 80%;
-}
+	.portfolio-item {
+		width: 80%;
+		margin-bottom: 1.5em;
+	}
+	.social-media {
+		width: 90%;
+		margin: 0 auto 2em;
+		float: none;
+	}
+	#header .container {
+		padding-top: 15em;
+	}
+	#contact .btn-social {
+		width: 30px;
+		height: 30px;
+		font-size: 2em;
+		font-weight:900;
+		line-height: 30px;
+		color: #ddd;
+		margin: 0.1em;
+	}
+	#contact ul li {
+		display: inline-block;
+	}
+	.contact-email {
+		width: 90%;
+		margin: 0 auto 5em;
+	}
+	#contact {
+		height: auto;
+	}
+	h4 {
+	 font-size: 2em;
+	}
+	.profile-photo {
+		float: none;
+		margin: 0 auto 1.5em;
+		height: 150px;
+		width: 150px;
+	}
+	.bio {
+		width: 80%;
+	}
 }
