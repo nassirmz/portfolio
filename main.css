@@ -6,7 +6,7 @@
 
 html, body {
 height:100%;
-color: #eee;
+color: #292b2a;
 text-align: center;
 }
 body {
@@ -19,6 +19,7 @@ body {
 section {
 	position: relative;
 	height: 100%;
+	overflow: hidden;
 }
 .container {
 	position: relative;
@@ -35,7 +36,7 @@ section {
 }
 
 #header {
-	background: linear-gradient(to bottom, rgba(92, 86, 84, 0.4) , rgba(92, 86, 84, 1)), url(../practice/img/home.jpeg) no-repeat center center;
+	background: linear-gradient(to bottom, rgba(163, 144, 138, 0.2) , rgba(163, 144, 138, 0.5)), url(../practice/img/home.jpeg) no-repeat center center;
 	background-size: cover; 
 	background-attachment: fixed;
 
@@ -45,7 +46,6 @@ section {
 }
 h1 {
 	font: bold 7em manifesto, "Lato", sans-serif;
-	color: #fff;
 }
 
 h3 {
@@ -87,21 +87,25 @@ nav a:hover {
 }
 
 #portfolio {
-	background:#817571;
+	background: linear-gradient(to bottom, rgba(163,144,138, 1) , rgba(163, 144, 138, 0.4)), url(../practice/img/portfolio.jpeg) no-repeat center center;
+	background-size: cover;
+	background-size: cover; 
 	height: auto;
 }
-
-#portfolio .portfolio-list .portfolio-item {
+/* rgba(109, 61,46, 0.5); */
+ .portfolio-item {
 	width: 28%;
 	height: 250px;
 	margin: 1.5%;
 	display: inline-block;
-	background-color: black;
-	border: 1px solid black;
+	background-color: #6d3d2e;
+	border: 6px solid #6d3d2e;
+	box-shadow: 5px 5px 5px #817571;
+	border-radius: 3px;
 }
 #portfolio img {
 	width: 100%;
-	height: 250px;
+	 height: 100%;
 }
 
 .portfolio-list {
@@ -111,9 +115,9 @@ nav a:hover {
 
 }
 #about {
-	background: linear-gradient(to bottom, rgba(255,255,255, 0.8) , rgba(163, 144, 138, 0.4)), url(../practice/img/about.jpeg) no-repeat center center;
-	background-size: cover;
+	
 	border: 1px solid rgb(163,144,138);
+	background: rgba(129,117,118, 0.5);
 	padding-bottom: 8em;
 	background-attachment: fixed;
 	height: auto;
@@ -144,8 +148,9 @@ nav a:hover {
 }
 
 #contact {
-	background:#3d3b3a;
+	
 	padding-bottom: 5em;
+	background:rgba(109,61,46, 0.4);
 }
 
 h4 {
@@ -159,7 +164,7 @@ h4 {
 	margin: 0 auto;
 	transition:  all 0.5s;
 	border-radius: 100%;
-	border: 5px solid #3d3b3a;
+	border: 5px solid rgba(109,61,45, 0);
 	display: table;
 }
 #contact .btn-social {
@@ -184,11 +189,11 @@ h4 {
 	border-bottom: 2px solid #6d3d2e;
 }
 #contact a:hover {
-	background-color: #292b2a;
-	color: #617269;
+	background-color: #617269;
+	color: #292b2a;
 }
 #contact ul li:hover{
-	border: 5px solid #292b2a;
+	border: 5px solid #617269;
 }
 
 .social-media {
@@ -197,25 +202,21 @@ h4 {
 	padding: 0 auto;
 	margin-right: 10%;
 }
-.connect-email {
-	width: 45%;
-	text-align: left;
-}
+
 
 #contact .container {
 	margin: 0 auto;
 	width: 80%;
 }
-.email p {
-	margin: 0 auto;
-	text-align: left;
+.contact-email p {
+	margin: 1.5em auto;
+	text-align: justify;
 }
 footer {
 	position: absolute;
-	height: 50px;
+	height: 40px;
 	bottom: 0px;
-	right: 0px;
-	left: 0px;
+	width: 100%;
 	text-align: center;
 	background-color: #6d3d2a;
 	color: #a3908a;
@@ -224,6 +225,69 @@ footer {
 footer p {
 	font-size: 1.2em;
 }
-#contact .container {
-	padding-bottom: 5em;
+
+@media screen and (max-width: 650px) {
+h1 {
+	font-size: 3.5em;
+}
+
+h3 {
+	font-size: 2.5em;
+}
+p {
+	font-size: 1.5em;
+}
+nav ul {
+	position: fixed;
+	background:rgba(109,61,46, 0.8);
+	top: 0;
+	height: 5em;
+	padding-top: 2em;
+	z-index: 1;
+}
+nav a {
+	font-size: 1.4em;
+}
+
+.portfolio-item {
+	width: 80%;
+	margin-bottom: 1.5em;
+}
+.social-media {
+	width: 90%;
+	margin: 0 auto 2em;
+	float: none;
+}
+#header .container {
+	padding-top: 15em;
+}
+#contact .btn-social {
+	width: 30px;
+	height: 30px;
+	font-size: 2em;
+	font-weight:900;
+	line-height: 30px;
+	color: #ddd;
+	margin: 0.1em;
+}
+#contact ul li {
+	display: inline-block;
+}
+.contact-email {
+	width: 90%;
+	margin: 0 auto 5em;
+}
+#contact {
+	height: auto;
+}
+h4 {
+ font-size: 2em;
+}
+.profile-photo {
+	float: none;
+	margin: 0 auto 1.5em;
+}
+.bio {
+	width: 80%;
+}
 }
