@@ -42,7 +42,6 @@ function animateOnScroll() {
     $thisTop = $this.offset().top,
     $thisHeight = $this.outerHeight(),
     $thisBottom = $thisTop + $thisHeight;
-
     // if(windowPos >=offsetTop) {
     //   if($this.data("timeout")) {
     //     window.setTimeout(function() {
