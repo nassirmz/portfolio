@@ -4,18 +4,6 @@ $(document).ready(function() {
   $(window).scroll(animateOnScroll);
 });
 
-//smooth scrolling 
-function smoothScroll() {
-  $("nav a").click(function(event) {
-    event.preventDefault();
-    var sectionId = event.currentTarget.id + "Section";
-    $("html body").animate({
-
-      scrollTop: $("#" + sectionId).offset().top
-    }, 1500);
-  });
-}
-
 //sticky nav bar on scroll
 function stickyNav() {
   var nav = $("nav ul");
@@ -30,6 +18,20 @@ function stickyNav() {
     }
   })
 }
+
+//smooth scrolling 
+function smoothScroll() {
+  $("nav a").click(function(event) {
+    event.preventDefault();
+    var sectionId = event.currentTarget.id + "Section";
+    $("html body").animate({
+
+      scrollTop: $("#" + sectionId).offset().top
+    }, 1500);
+  });
+}
+
+
 
 //animation on scroll
 
