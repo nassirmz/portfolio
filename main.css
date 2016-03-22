@@ -77,12 +77,22 @@ nav a {
 	padding: 0.5em 1em;
 	margin: 0.4em;
 	transition: all 0.5s;
+	outline: none;
 }
 nav a:hover {
 	background-color: #29282a;
 	border: 2px solid #6d3d2e;
 	color: #6d3d2e;
 }
+.fixedTop {
+	position: fixed;
+	background:rgba(109,61,46, 0.8);
+	top: 0;
+	height: 5em;
+	padding-top: 2em;
+	z-index: 2;	
+}
+
 
 #portfolioSection {
 	background: linear-gradient(to bottom, rgba(163,144,138, 1) , rgba(163, 144, 138, 0.4)), url(../practice/img/portfolio.jpeg) no-repeat center center;
