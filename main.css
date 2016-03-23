@@ -36,7 +36,7 @@ section {
 }
 
 #headerSection {
-	background: linear-gradient(to bottom, rgba(163, 144, 138, 0.2) , rgba(163, 144, 138, 0.5)), url(../practice/img/home.jpeg) no-repeat center center;
+	background: linear-gradient(to bottom, rgba(163, 144, 138, 0.2) , rgba(163, 144, 138, 0.5)), url(../portfolio/img/home.jpeg) no-repeat center center;
 	background-size: cover; 
 	background-attachment: fixed;
 
@@ -95,7 +95,7 @@ nav a:hover {
 
 
 #portfolioSection {
-	background: linear-gradient(to bottom, rgba(163,144,138, 1) , rgba(163, 144, 138, 0.4)), url(../practice/img/portfolio.jpeg) no-repeat center center;
+	background: linear-gradient(to bottom, rgba(163,144,138, 1) , rgba(163, 144, 138, 0.4)), url(../portfolio/img/portfolio.jpeg) no-repeat center center;
 	background-size: cover;
 	height: auto;
 }
