@@ -36,7 +36,7 @@ section {
 }
 
 #headerSection {
-	background: linear-gradient(to bottom, rgba(163, 144, 138, 0.2) , rgba(163, 144, 138, 0.5)), url(../portfolio/img/home.jpeg) no-repeat center center;
+	background: linear-gradient(to bottom, rgba(163, 144, 138, 0.2) , rgba(163, 144, 138, 0.5)), url(../../public/img/home.jpeg) no-repeat center center;
 	background-size: cover; 
 	background-attachment: fixed;
 
