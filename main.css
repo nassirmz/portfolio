@@ -35,13 +35,13 @@ section {
 	clear: both;
 }
 
-#header {
+#headerSection {
 	background: linear-gradient(to bottom, rgba(163, 144, 138, 0.2) , rgba(163, 144, 138, 0.5)), url(../portfolio/img/home.jpeg) no-repeat center center;
 	background-size: cover; 
 	background-attachment: fixed;
 
 }
-#header .container {
+#headerSection .container {
 	padding-top: 25em;
 }
 h1 {
@@ -77,14 +77,24 @@ nav a {
 	padding: 0.5em 1em;
 	margin: 0.4em;
 	transition: all 0.5s;
+	outline: none;
 }
 nav a:hover {
 	background-color: #29282a;
 	border: 2px solid #6d3d2e;
 	color: #6d3d2e;
 }
+.fixedTop {
+	position: fixed;
+	background:rgba(109,61,46, 0.8);
+	top: 0;
+	height: 5em;
+	padding-top: 2em;
+	z-index: 2;	
+}
 
-#portfolio {
+#portfolioSection {
+
 	background: linear-gradient(to bottom, rgba(163,144,138, 1) , rgba(163, 144, 138, 0.4)), url(../portfolio/img/portfolio.jpeg) no-repeat center center;
 	background-size: cover;
 	height: auto;
@@ -102,7 +112,7 @@ nav a:hover {
 	position: relative;
 	overflow: hidden;
 }
-#portfolio img {
+#portfolioSection img {
 	width: 100%;
 	height: 100%;
 }	
@@ -135,7 +145,7 @@ nav a:hover {
 	z-index: 1;
 }
 
-#about {
+#aboutSection {
 	
 	border: 1px solid rgb(163,144,138);
 	background: rgba(129,117,118, 0.5);
@@ -150,11 +160,11 @@ nav a:hover {
 	margin: 0 auto;
 }
 
-#about  p {
+#aboutSection  p {
 	text-align: left;
 	color: #292b2a;
 }
-#about h3 {
+#aboutSection h3 {
 	color: #292b2a;
 }
 
@@ -168,7 +178,7 @@ nav a:hover {
 	margin: 0 0 1.5em 1.5em;
 }
 
-#contact {
+#contactSection {
 	padding-bottom: 5em;
 	background:rgba(109,61,46, 0.4);
 }
@@ -176,18 +186,18 @@ nav a:hover {
 h4 {
 	font: 3em Lato, sans-serif;
 }
-#contact ul {
+#contactSection ul {
 	margin: 1em auto;
 	list-style: none;
 }
-#contact ul li {
+#contactSection ul li {
 	margin: 0 auto;
 	transition:  all 0.5s;
 	border-radius: 100%;
 	border: 5px solid rgba(109,61,45, 0);
 	display: table;
 }
-#contact .btn-social {
+#contactSection .btn-social {
 	display:inline-block;
 	width: 60px;
 	height: 60px;
@@ -202,17 +212,17 @@ h4 {
 	margin: 0.1em;
 }
 
-#contact a {
+#contactSection a {
 	transition: all 0.5s;
 	color: #ddd;
 	text-decoration: none;
 	border-bottom: 2px solid #6d3d2e;
 }
-#contact a:hover {
+#contactSection a:hover {
 	background-color: #292b2a; 
 	color:  #6d3d2e;
 }
-#contact ul li:hover{
+#contactSection ul li:hover{
 	border: 5px solid #6d3d2e;
 }
 
@@ -223,11 +233,11 @@ h4 {
 	margin-right: 10%;
 }
 
-
-#contact .container {
+#contactSection .container {
 	margin: 0 auto;
 	width: 80%;
 }
+
 .contact-email p {
 	margin: 1.5em auto;
 	text-align: justify;
@@ -278,10 +288,10 @@ footer p {
 		margin: 0 auto 2em;
 		float: none;
 	}
-	#header .container {
+	#headerSection .container {
 		padding-top: 15em;
 	}
-	#contact .btn-social {
+	#contactSection .btn-social {
 		width: 30px;
 		height: 30px;
 		font-size: 2em;
@@ -290,14 +300,14 @@ footer p {
 		color: #ddd;
 		margin: 0.1em;
 	}
-	#contact ul li {
+	#contactSection ul li {
 		display: inline-block;
 	}
 	.contact-email {
 		width: 90%;
 		margin: 0 auto 5em;
 	}
-	#contact {
+	#contactSection {
 		height: auto;
 	}
 	h4 {
